@@ -1,0 +1,22 @@
+#Hubert Radzik
+count = 0
+total_pay = 0
+response = input("Do you want to continue? Enter Yes or No: ")
+while response == "yes":
+    last_name = (input("Enter employee last name: "))
+    hours = float(input("Enter hours worked: "))
+    rate = float(input("Enter rate of pay: "))
+    if hours > 40:
+        gross = (40 * rate) + ((hours - 40) * rate * 1.5)
+    else:
+        gross = hours * rate
+    print("Last Name:", last_name)
+    print("Gross Pay:", gross)
+    total_pay = total_pay + gross
+    count = count + 1
+    response = input("Do you want to continue? Enter Yes or No: ")
+if count > 0:  average_pay = total_pay / count
+else: average_pay = 0
+print("Total Gross Pay:", total_pay)
+print("Number of Employees:", count)
+print("Average Pay:", average_pay)
