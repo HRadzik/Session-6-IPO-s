@@ -1,13 +1,13 @@
 #Hubert Radzik
 count = 0
 response = input("Do you want to continue? Enter Yes or No: ")
-while response == "Yes": 
-  last_name = float(input("Enter last name: "))
-exam1 = float(input("Enter exam 1 score: "))
-exam2 = float(input("Enter exam 2 score: "))
-average = (exam1 + exam2) / 2
-print("Last Name:", last_name)
-print("Average:", average)
-count = count + 1
-response = input("Do you want to continue? Enter Yes or No: ")
+while response == "yes": 
+  last_name = input("Enter last name: ")
+  exam1 = float(input("Enter exam 1 score: "))
+  exam2 = float(input("Enter exam 2 score: "))
+  average = (exam1 + exam2) / 2
+  print("Last Name:", last_name)
+  print("Average:", average)
+  count = count + 1
+  response = input("Do you want to continue? Enter Yes or No: ")
 print("Total number of students:", count)
